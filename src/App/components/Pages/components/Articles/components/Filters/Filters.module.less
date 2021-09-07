@@ -1,0 +1,22 @@
+.Filters {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.DataList {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, 2%);
+  opacity: 0;
+  visibility: hidden;
+  background-color: var(--white);
+  transition: transform 0.2s, opacity 0.2s;
+
+  &.Showed {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, 0);
+  }
+}

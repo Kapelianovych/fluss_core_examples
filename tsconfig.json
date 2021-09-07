@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "strict": true,
+    "target": "ESNext",
+    "module": "ESNext",
+    "paths": {
+      "~*": ["./*"]
+    },
+    "moduleResolution": "node",
+    "plugins": [{ "name": "typescript-plugin-css-modules" }]
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}
