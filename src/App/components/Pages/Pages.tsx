@@ -5,11 +5,13 @@ import { Home } from './components/Home';
 import { Stream } from './components/Stream';
 import { Articles } from './components/Articles';
 import { Debounce } from './components/Debounce';
+import { Consequence } from './components/Consequence';
 
 export enum RouteNameToPath {
   STREAM = '/stream',
   ARTICLES = '/articles',
   DEBOUNCE = '/debounce',
+  CONSEQUENT = '/consequent',
 }
 
 export const Pages = () => (
@@ -25,6 +27,9 @@ export const Pages = () => (
     </Route>
     <Route path={RouteNameToPath.ARTICLES}>
       <Articles />
+    </Route>
+    <Route path={RouteNameToPath.CONSEQUENT}>
+      <Consequence />
     </Route>
   </Switch>
 );
